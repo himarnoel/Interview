@@ -17,7 +17,12 @@ const Hero = () => {
     visible: {
       x: 0,
       opacity: 1,
-      transition: { type: "spring", stiffness: 100, duration: 1, ease: "easeInOut" }, // Use easeInOut easing function
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        duration: 1,
+        ease: "easeInOut",
+      }, // Use easeInOut easing function
     },
   };
 
@@ -26,7 +31,12 @@ const Hero = () => {
     visible: {
       x: 0,
       opacity: 1,
-      transition: { type: "spring", stiffness: 100, duration: 1, ease: "easeInOut" }, // Use easeInOut easing function
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        duration: 1,
+        ease: "easeInOut",
+      }, // Use easeInOut easing function
     },
   };
 
@@ -67,6 +77,11 @@ const Hero = () => {
           <li>Transfer money online in African currencies</li>
           <li className="mt-3">Payment received in USD, GBP, and EUR </li>
         </ol>
+        <img
+          src={card}
+          alt=""
+          className="mx-auto  md:hidden    mt-10 lg:mt-5   object-contain   w-[16rem]  xl:w-[23rem]  md:w-[15rem] lg:w-[20rem] lg:right-10 md:right-8 md:top-64    xl:right-24 z-[20]  lg:top-[2rem] xl:top-[20rem] "
+        />
         <motion.button
           variants={buttonVariants}
           whileHover={{ scale: 1.1 }}
